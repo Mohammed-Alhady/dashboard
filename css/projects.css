@@ -1,0 +1,112 @@
+/* varibles */
+:root {
+  --transtion: 0.3s;
+  --blue-color: #0075ff;
+  --blue-alt-color: #0d69d5;
+  --orange-color: #f59e0b;
+  --green-color: #22c55e;
+  --red-color: #f44336;
+  --grey-color: #888;
+  --line-height: 1.8;
+  --border-color: #eee;
+}
+
+/* projects */
+.projects-page {
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  margin: 0 20px 20px;
+}
+@media (max-width: 767px) {
+  .projects-page {
+    grid-template-columns: minmax(200px, 1fr);
+    margin: 0 10px 10px;
+    gap: 10px;
+  }
+}
+.projects-page .date {
+  position: absolute;
+  top: 10;
+  right: 10px;
+}
+@media (max-width: 767px) {
+  .projects-page .date {
+    top: 5px;
+    right: 10px;
+  }
+}
+.projects-page .team {
+  position: relative;
+  min-height: 80px;
+}
+.projects-page .team a {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.projects-page .team a:nth-child(2) {
+  left: 30px;
+}
+.projects-page .team a:nth-child(3) {
+  left: 60px;
+}
+.projects-page .team a:nth-child(4) {
+  left: 90px;
+}
+.projects-page .team a:nth-child(5) {
+  left: 120px;
+}
+.projects-page .team a img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+.projects-page .team a:hover {
+  z-index: 99;
+}
+.projects-page .methods {
+  justify-content: flex-end;
+  margin: 15px 0;
+  padding: 15px 0;
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+}
+@media (max-width: 767px) {
+  .projects-page .methods {
+    flex-direction: column;
+  }
+  .projects-page .methods span {
+    margin: 0 0 10px;
+  }
+}
+.projects-page .methods span:not(:last-of-type) {
+  margin-right: 5px;
+}
+@media (max-width: 767px) {
+  .projects-page .info {
+    flex-direction: column;
+  }
+}
+.projects-page .info .progress {
+  height: 10px;
+  width: 250px;
+  position: relative;
+}
+@media (max-width: 767px) {
+  .projects-page .info .progress {
+    margin-bottom: 10px;
+    width: 200px;
+    height: 5px;
+  }
+}
+.projects-page .info .progress span {
+  height: 10px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+@media (max-width: 767px) {
+  .projects-page .info .progress span {
+    height: 5px;
+  }
+}

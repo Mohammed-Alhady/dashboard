@@ -1,0 +1,331 @@
+/* display */
+.d-flex {
+  display: flex;
+}
+.flex-1 {
+  flex: 1;
+}
+.f-wrap {
+  flex-wrap: wrap;
+}
+.d-grid {
+  display: grid;
+}
+.d-block {
+  display: block;
+}
+@media (max-width: 767px) {
+  .d-block-mobile {
+    display: block;
+  }
+}
+.justify-center {
+  justify-content: center;
+}
+.space-between {
+  justify-content: space-between;
+}
+.align-center {
+  align-items: center;
+}
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  .column-mobile {
+    flex-direction: column;
+  }
+}
+.gap-20 {
+  gap: 20px;
+}
+
+/* vars */
+:root {
+  --transtion: 0.3s;
+  --blue-color: #0075ff;
+  --blue-alt-color: #0d69d5;
+  --orange-color: #f59e0b;
+  --green-color: #22c55e;
+  --red-color: #f44336;
+  --grey-color: #888;
+  --line-height: 1.8;
+  --border-color: #eee;
+}
+
+/* background and color */
+.bg-white {
+  background-color: white;
+}
+.bg-eee {
+  background-color: #eee;
+}
+.bg-blue {
+  background-color: var(--blue-color);
+}
+.bg-orange {
+  background-color: var(--orange-color);
+}
+.bg-green {
+  background-color: var(--green-color);
+}
+.bg-red {
+  background-color: var(--red-color);
+}
+.bg-blue-alt {
+  background-color: var(--blue-alt-color);
+}
+.c-black {
+  color: black;
+}
+.c-grey {
+  color: var(--grey-color);
+}
+.c-white {
+  color: white;
+}
+.c-blue {
+  color: var(--blue-color);
+}
+.c-orange {
+  color: var(--orange-color);
+}
+.c-green {
+  color: var(--green-color);
+}
+.c-red {
+  color: var(--red-color);
+}
+
+/* padding and margin */
+.m-0 {
+  margin: 0;
+}
+.m-15 {
+  margin: 15px;
+}
+.m-20 {
+  margin: 20px;
+}
+.mtop-0 {
+  margin-top: 0;
+}
+.mtop-5 {
+  margin-top: 5px;
+}
+.mtop-15 {
+  margin-top: 15px;
+}
+.mtop-10 {
+  margin-top: 10px;
+}
+.mtop-20 {
+  margin-top: 20px;
+}
+.mtop-25 {
+  margin-top: 25px;
+}
+.mleft-20 {
+  margin-left: 20px;
+}
+.mright-5 {
+  margin-right: 5px;
+}
+.mright-15 {
+  margin-right: 15px;
+}
+.mright-20 {
+  margin-right: 20px;
+}
+.mbottom-5 {
+  margin-bottom: 5px;
+}
+.mbottom-10 {
+  margin-bottom: 10px;
+}
+.mbottom-15 {
+  margin-bottom: 15px;
+}
+.mbottom-20 {
+  margin-bottom: 20px;
+}
+.mbottom-25 {
+  margin-bottom: 25px;
+}
+.mrighy-15 {
+  margin-right: 15px;
+}
+.p-10 {
+  padding: 10px;
+}
+.p-15 {
+  padding: 15px;
+}
+.p-20 {
+  padding: 20px;
+}
+.ptop-15 {
+  padding-top: 15px;
+}
+.ptop-20 {
+  padding-top: 15px;
+}
+.pbottom-10 {
+  padding-bottom: 10px;
+}
+.pbottom-15 {
+  padding-bottom: 15px;
+}
+.pbottom-20 {
+  padding-bottom: 20px;
+}
+.pleft-15 {
+  padding-left: 15px;
+}
+
+/* position */
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+
+/* fonts and texts */
+.txt-center {
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .txt-c-mobile {
+    text-align: center;
+  }
+}
+.fs-13 {
+  font-size: 13px;
+}
+@media (max-width: 767px) {
+  .fs-13-mobile {
+    font-size: 13px;
+  }
+}
+.fs-14 {
+  font-size: 14px;
+}
+.fs-15 {
+  font-size: 15px;
+}
+.fs-25 {
+  font-size: 25px;
+}
+.fw-bold {
+  font-weight: bold;
+}
+.fw-normal {
+  font-weight: normal;
+}
+
+/* border */
+.rad-6 {
+  border-radius: 6px;
+}
+.rad-10 {
+  border-radius: 10px;
+}
+.rad-half {
+  border-radius: 50%;
+}
+.b1-ccc {
+  border: 1px solid #ccc;
+}
+.b-none {
+  border: none;
+}
+.s-border {
+  border: 1px solid var(--border-color);
+}
+
+/* mobile */
+@media (max-width: 767px) {
+  .hide-mobile {
+    display: none;
+  }
+}
+
+/* width and heith */
+.w-full {
+  width: 100%;
+}
+.w-fit {
+  width: fit-content;
+}
+.h-full {
+  height: 100%;
+}
+
+/* components */
+.btn-shape {
+  display: block;
+  width: fit-content;
+  padding: 4px 10px;
+  border-radius: 6px;
+  transition: var(--transtion);
+  cursor: pointer;
+}
+@media (max-width: 767px) {
+  .btn-shape {
+    margin: 0 auto;
+  }
+}
+.box-shape {
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+}
+.label {
+  display: flex;
+}
+.toggle-checkbox {
+  -webkit-appearance: none;
+  appearance: none;
+}
+.toggle-switch {
+  width: 78px;
+  height: 32px;
+  border-radius: 16px;
+  background-color: #ccc;
+  position: relative;
+  cursor: pointer;
+  transition: var(--transtion);
+}
+.toggle-switch::before {
+  font-family: var(--fa-style-family-classic);
+  content: "\f00d";
+  font-weight: 900;
+  width: 24px;
+  height: 24px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #aaa;
+  transition: var(--transtion);
+}
+.toggle-checkbox:checked + .toggle-switch {
+  background-color: var(--blue-color);
+}
+.toggle-checkbox:checked + .toggle-switch::before {
+  content: "\f00c";
+  left: calc(100% - 28px);
+  color: var(--blue-color);
+}

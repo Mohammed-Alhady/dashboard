@@ -1,0 +1,119 @@
+/* varibles */
+:root {
+  --transtion: 0.3s;
+  --blue-color: #0075ff;
+  --blue-alt-color: #0d69d5;
+  --orange-color: #f59e0b;
+  --green-color: #22c55e;
+  --red-color: #f44336;
+  --grey-color: #888;
+  --line-height: 1.8;
+  --border-color: #eee;
+}
+
+/* profile page */
+@media (max-width: 768px) {
+  .profile-page .overview {
+    flex-direction: column;
+  }
+}
+.profile-page .info-box h4 {
+  font-weight: normal;
+}
+.profile-page .avatar-box {
+  width: 300px;
+}
+@media (min-width: 768px) {
+  .profile-page .avatar-box {
+    border-right: 1px solid #eee;
+  }
+}
+.profile-page .info-box .box {
+  flex-wrap: wrap;
+  transition: var(--transtion);
+  border-bottom: 1px solid #eee;
+}
+.profile-page .info-box .box:hover {
+  background-color: #f6f6f6;
+}
+.profile-page .info-box .box > div {
+  width: 250px;
+  padding: 10px 0 0;
+}
+.profile-page .avatar-box > img {
+  width: 120px;
+}
+.profile-page .level {
+  height: 5px;
+  overflow: hidden;
+  margin: auto;
+  width: 70%;
+}
+.profile-page .level span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background-color: var(--blue-color);
+  border-radius: 6px;
+}
+.toggle-switch {
+  height: 20px;
+  border-radius: 16px;
+}
+.toggle-switch::before {
+  font-size: 8px;
+  width: 12px;
+  height: 12px;
+}
+.toggle-checkbox:checked + .toggle-switch::before {
+  left: calc(100% - 16px);
+}
+@media (max-width: 767px) {
+  .label {
+    justify-content: center;
+  }
+}
+@media (max-width: 767px) {
+  .profile-page .other-data {
+    flex-direction: column;
+  }
+}
+.profile-page .skills-card {
+  flex-grow: 0.75;
+}
+.profile-page .skills-card ul li {
+  padding: 15px 0;
+}
+.profile-page .skills-card ul li:not(:last-child) {
+  border-bottom: 1px solid var(--border-color);
+}
+.profile-page .skills-card ul li span {
+  display: inline-flex;
+  padding: 4px 10px;
+  background-color: #eee;
+  border-radius: 6px;
+  font-size: 14px;
+}
+.profile-page .skills-card ul li span:not(:last-child) {
+  margin-right: 5px;
+}
+.profile-page .activities {
+  flex-grow: 2;
+}
+.profile-page .activities .activity:not(:last-of-type) {
+  border-bottom: 1px solid var(--border-color);
+}
+.profile-page .activities .activity img {
+  width: 64px;
+  height: 64px;
+  margin-right: 10px;
+}
+@media (max-width: 767px) {
+  .profile-page .activities .activity img {
+    margin: 0 0 15px;
+  }
+  .profile-page .activities .activity .last {
+    margin-top: 15px;
+  }
+}

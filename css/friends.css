@@ -1,0 +1,81 @@
+/* varibles */
+:root {
+  --transtion: 0.3s;
+  --blue-color: #0075ff;
+  --blue-alt-color: #0d69d5;
+  --orange-color: #f59e0b;
+  --green-color: #22c55e;
+  --red-color: #f44336;
+  --grey-color: #888;
+  --line-height: 1.8;
+  --border-color: #eee;
+}
+
+/* firends */
+.friends-page {
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  margin: 0 20px 20px;
+  gap: 20px;
+}
+@media (max-width: 767px) {
+  .friends-page {
+    grid-template-columns: minmax(200px, 1fr);
+    margin: 0 10px 10px;
+    gap: 10px;
+  }
+}
+.contact {
+  width: fit-content;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+.contact i {
+  padding: 10px;
+  background-color: #eee;
+  border-radius: 50%;
+  transition: var(--transtion);
+  font-size: 13px;
+  cursor: pointer;
+}
+.contact i:hover {
+  background-color: var(--blue-color);
+  color: white;
+}
+.cont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.cont img {
+  width: 100px;
+  height: 100px;
+}
+.info {
+  flex-direction: column;
+  margin: 15px 0;
+  padding: 15px 0;
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+}
+.info div {
+  position: relative;
+  font-size: 13px;
+}
+.info div:not(:last-child) {
+  margin-bottom: 10px;
+}
+.info div i {
+  margin-right: 5px;
+}
+.info .vip {
+  position: absolute;
+  font-size: 40px;
+  color: var(--orange-color);
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.2;
+  font-weight: bold;
+}
